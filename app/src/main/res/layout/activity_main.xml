@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lanou3g.dev.demo.MainActivity">
+
+    <com.lanou3g.dev.demo.widget.RefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+                <include layout="@android:layout/simple_list_item_1"/>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </com.lanou3g.dev.demo.widget.RefreshLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="finish"
+        android:text="刷新或加载结束"/>
+</RelativeLayout>
